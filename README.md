@@ -5,7 +5,17 @@ A simple bash script for searching Troy Hunt's [pwnedpasswords](https://www.troy
 
 ## Usage
 ```
+This is a simple bash script for searching Troy Hunt's pwnedpassword API using the k-anonymity algorithm
+
 Usage
 
-  ./pwnedpasswords.sh PASSWORD
+  ./pwnedpasswords.sh [options] PASSWORD
+
+Options:
+
+    -h, --help    Shows this message
+
+Arguments:
+
+        PASSWORD    Provide the password as the first argument or leave blank to provide via STDINT or prompt
 ```
