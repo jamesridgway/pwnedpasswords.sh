@@ -1,0 +1,12 @@
+dist: trusty
+
+language: bash
+
+addons:
+  apt:
+    packages:
+      - shellcheck
+      - cmake
+
+script:
+  - make lint
