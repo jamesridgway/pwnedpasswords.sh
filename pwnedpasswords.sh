@@ -32,7 +32,7 @@ pwned_password()
 {
 	local password sha1 short_sha1 sha1_suffix http_status http_body http_response
 	password="$1"
-	sha1=$(echo -n "$password" | sha1sum | awk '{print toupper($1)}')
+	sha1=$(echo -n "$password" | shasum | awk '{print toupper($1)}')
 	short_sha1=${sha1:0:5}
 	sha1_suffix=${sha1:5}
 
@@ -76,7 +76,7 @@ fi
 
 if [ -z "${PASSWORD}" ]; then
 	echo "Enter password:"
-	read -s PASSWORD
+	read -r -s PASSWORD
 fi
 
 pre_requisites
