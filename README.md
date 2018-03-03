@@ -21,3 +21,20 @@ Arguments:
 
         PASSWORD    Provide the password as the first argument or leave blank to provide via STDINT or prompt
 ```
+
+## Functionality
+This is a very simple script that allows you to check if a password has been pwned. You can provide the password via one of the following options.
+* Provide a password as an argument:
+  ```
+  $ /pwnedpasswords.sh "P@ssw0rd"
+  ```
+* Provide a password via stdin:
+  ```
+  $ echo "P@ssw0rd" | ./pwnedpasswords.sh
+  ```
+* Provide a password via explicit prompt:
+  ```
+  $ ./pwnedpasswords.sh
+  Enter password:
+  This password has appeared 47205 times in data breaches.
+  ```
